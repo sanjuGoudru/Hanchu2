@@ -5,7 +5,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -55,10 +55,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     .into(holder.fileImage);
         }
         holder.fileText.setText(mNames.get(position));
-        holder.parentLayout.setOnClickListener(new View.OnClickListener() {
+
+        holder.parentLayout.findViewById(R.id.share_image).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d(TAG, "TEST: onClick: clicked on " + mNames.get(position));
+                Log.d(TAG, "TEST: onClick: clicked on share image at " + mNames.get(position));
                 Toast.makeText(mContext, mPaths.get(position),Toast.LENGTH_SHORT).show();
             }
         });
@@ -72,7 +73,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public class ViewHolder extends RecyclerView.ViewHolder{
         CircleImageView fileImage;
         TextView fileText;
-        RelativeLayout parentLayout;
+        LinearLayout parentLayout;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             fileImage = itemView.findViewById(R.id.file_image);

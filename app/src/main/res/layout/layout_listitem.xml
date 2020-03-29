@@ -1,25 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="80dp"
-    android:id="@+id/parent_layout">
-<de.hdodenhof.circleimageview.CircleImageView
-    android:layout_width="80dp"
-    android:layout_height="80dp"
-    android:id="@+id/file_image"
-    android:src="@mipmap/ic_launcher"/>
-    <TextView
-        android:layout_toEndOf="@id/file_image"
+    android:id="@+id/parent_layout"
+    android:orientation="horizontal"
+    android:weightSum="100">
+    <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:maxWidth="80dp"
+        android:id="@+id/file_image"
+         android:src="@mipmap/ic_launcher"
+        android:layout_margin="10dp"
+        android:layout_weight="40"/>
+    <TextView
         android:id="@+id/file_text"
-        android:text="Sanju"
-        android:layout_marginLeft="30dp"
-        android:textSize="16sp"
-        android:gravity="center_vertical"
-        android:textColor="#000"/>
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="80dp"
+        android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:text="Sanju"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_weight="20"/>
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/share_image"
-        android:src="@mipmap/ic_launcher"/>
-</RelativeLayout>
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:paddingEnd="20dp"
+        android:src="@drawable/share_icon"
+        android:layout_weight="40"
+        android:maxWidth="30dp"/>
+
+</LinearLayout>
