@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical">
+   <co.ceryle.radiorealbutton.RadioRealButtonGroup
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:rrbg_animateDrawables_enter="overshoot"
+       app:rrbg_animateTexts_enter="overshoot"
+       app:rrbg_dividerColor="#000"
+       app:rrbg_dividerSize="1dp"
+       app:rrbg_radius="10dp"
+       app:rrbg_selectorColor="#C67C0F"
+       app:rrbg_selectorSize="6dp"
+       android:id="@+id/online_offline_radio_group">
+
+      <co.ceryle.radiorealbutton.RadioRealButton
+          android:id="@+id/online_radio"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:rrb_drawable="@drawable/online_icon"
+          app:rrb_drawableHeight="36dp"
+          app:rrb_drawablePadding="8dp"
+          app:rrb_drawableWidth="36dp"
+          app:rrb_ripple="true"
+          app:rrb_rippleColor="#000"
+          app:rrb_text="Online"
+          app:rrb_textColor="#000"/>
+
+      <co.ceryle.radiorealbutton.RadioRealButton
+          android:id="@+id/offline_radio"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:rrb_drawable="@drawable/offline_icon"
+          app:rrb_drawableGravity="right"
+          app:rrb_drawableHeight="36dp"
+          app:rrb_drawablePadding="8dp"
+          app:rrb_drawableWidth="36dp"
+          app:rrb_ripple="true"
+          app:rrb_rippleColor="#000"
+          app:rrb_text="Offline"
+          app:rrb_textColor="#000"/>
+   </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+   <co.ceryle.radiorealbutton.RadioRealButtonGroup
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:rrbg_animateDrawables_enter="overshoot"
+       app:rrbg_animateTexts_enter="overshoot"
+       app:rrbg_dividerColor="#000"
+       app:rrbg_dividerSize="1dp"
+       app:rrbg_radius="10dp"
+       app:rrbg_selectorColor="#1BC86F"
+       app:rrbg_selectorSize="6dp"
+       android:id="@+id/copy_same_radio_group">
+
+      <co.ceryle.radiorealbutton.RadioRealButton
+          android:id="@+id/make_copy_radio"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:rrb_drawable="@drawable/make_copy_icon"
+          app:rrb_drawableHeight="36dp"
+          app:rrb_drawablePadding="8dp"
+          app:rrb_drawableWidth="36dp"
+          app:rrb_ripple="true"
+          app:rrb_rippleColor="#000"
+          app:rrb_text="Make Copy"
+          app:rrb_textColor="#000"/>
+
+      <co.ceryle.radiorealbutton.RadioRealButton
+          android:id="@+id/same_file_radio"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:rrb_drawable="@drawable/same_file_icon"
+          app:rrb_drawableGravity="right"
+          app:rrb_drawableHeight="36dp"
+          app:rrb_drawablePadding="8dp"
+          app:rrb_drawableWidth="36dp"
+          app:rrb_ripple="true"
+          app:rrb_rippleColor="#000"
+          app:rrb_text="Same File"
+          app:rrb_textColor="#000"/>
+   </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+   <co.ceryle.radiorealbutton.RadioRealButtonGroup
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:rrbg_animateDrawables_enter="overshoot"
+       app:rrbg_animateTexts_enter="overshoot"
+       app:rrbg_dividerColor="#000"
+       app:rrbg_dividerSize="1dp"
+       app:rrbg_radius="10dp"
+       app:rrbg_selectorColor="#C81B66"
+       app:rrbg_selectorSize="6dp"
+       android:id="@+id/read_write_radio_group">
+
+      <co.ceryle.radiorealbutton.RadioRealButton
+          android:id="@+id/read_only_radio"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:rrb_drawable="@drawable/read_only_icon"
+          app:rrb_drawableHeight="36dp"
+          app:rrb_drawablePadding="8dp"
+          app:rrb_drawableWidth="36dp"
+          app:rrb_ripple="true"
+          app:rrb_rippleColor="#000"
+          app:rrb_text="Read Only"
+          app:rrb_textColor="#000"/>
+
+      <co.ceryle.radiorealbutton.RadioRealButton
+          android:id="@+id/write_radio"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:rrb_drawable="@drawable/write_image_icon"
+          app:rrb_drawableGravity="right"
+          app:rrb_drawableHeight="36dp"
+          app:rrb_drawablePadding="8dp"
+          app:rrb_drawableWidth="36dp"
+          app:rrb_ripple="true"
+          app:rrb_rippleColor="#000"
+          app:rrb_text="Write"
+          app:rrb_textColor="#000"/>
+   </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+</LinearLayout>

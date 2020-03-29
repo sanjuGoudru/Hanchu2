@@ -10,6 +10,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -60,7 +62,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "TEST: onClick: clicked on share image at " + mNames.get(position));
-                Toast.makeText(mContext, mPaths.get(position),Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, mNames.get(position),Toast.LENGTH_SHORT).show();
+                MainShareDialog shareDialog = new MainShareDialog();
+                FragmentManager manager = ((AppCompatActivity) mContext).getSupportFragmentManager();
+                shareDialog.show(manager, "Dialog Box");
+
             }
         });
     }
